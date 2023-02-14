@@ -25,12 +25,17 @@
 
 @media all and (max-width: 960px) { 
   header{
+    position: relative;
+    height: auto;
+    padding: 10px;
     .logo{
-      height: 100%;
+      height: 60px;
       width: auto;
     }
     .nav{
+      flex-direction: column !important;
       padding: 0 10px;
+      justify-content: center !important;
       .nav-link{
         &.studio{
           .label{
@@ -40,5 +45,7 @@
       }
     }
   }
-  
+  #linto-app-wrapper{
+    padding-top: 40px;
+  }
 }
