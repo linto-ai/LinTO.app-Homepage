@@ -1,0 +1,44 @@
+@media all and (max-width: 1280px){
+  h2{
+    font-size: 26px;
+  }
+}
+
+@media all and (max-width: 1024px) { 
+  #homepage{
+    flex-direction: column !important;
+  }
+  h2{
+    padding-top: 0;
+  }
+  #linto-app-wrapper{
+    padding-top: 100px;
+    &:after{
+      display: none;
+    }
+  }
+  #app{
+    overflow: auto;
+  }
+  
+}
+
+@media all and (max-width: 960px) { 
+  header{
+    .logo{
+      height: 100%;
+      width: auto;
+    }
+    .nav{
+      padding: 0 10px;
+      .nav-link{
+        &.studio{
+          .label{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  
+}
