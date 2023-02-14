@@ -1,0 +1,57 @@
+header{
+  background-color: $textColor;
+  height: 60px;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  .icon{
+    display: inline-block;
+    height: 100%;
+    width: auto;
+  }
+  .nav{
+    padding: 0 20px;
+    .nav-link{
+      display: inline-block;
+      color: #fff;
+      height: 40px;
+      margin: 0 10px;
+      
+      
+      .icon{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        background: red;
+        &.studio{
+          @include maskImage('/assets/img/linto-studio-logo.svg');
+          background-color: #fff;
+        }
+      }
+      .label{
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        display: inline-block;
+        vertical-align: top;
+      }
+      &:hover{
+        .label{
+          text-decoration: underline;
+          color: $greenChart;
+        }
+        .icon{
+          background-color: $greenChart;
+        }
+      }
+    }
+  }
+
+}

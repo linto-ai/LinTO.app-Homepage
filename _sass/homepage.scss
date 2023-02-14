@@ -1,0 +1,99 @@
+
+#homepage{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#linto-app-wrapper,
+#linto-studio-wrapper {
+  box-sizing: border-box;
+  padding: 40px 80px;
+}
+
+#linto-app-wrapper{
+  background: $greenChart;
+  &:after{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    margin-left: -50px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    background-image: url('/assets/img/bg-triangle.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+  } 
+  
+} 
+
+h2{
+  display: inline-block;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.3em;
+  max-width: 70%;
+  padding-top: 20%;
+  &.white{
+    color: #fff;
+  }
+  &.green{
+    color: $greenChart;
+  }
+  strong{
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+  }
+}
+
+.call-to-action{
+  margin: 40px 0;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  background-color: #fff;
+  @include borderRadius(5px);
+  border: 2px solid;
+  @include boxShadow(0,2px, 4px, 0, rgba(0,0,0,0.4));
+  box-sizing: border-box;
+  padding: 10px;
+  &.studio{
+    border-color: $greenChart;
+  }
+  &.lintoapp{
+    border-color: $blueLinto;
+  }
+  img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.coming-soon-container{
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid $redChart;
+  @include borderRadius(5px);
+  background-color: #efefef;
+  .coming-soon-label{
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background: $redChart;
+    color: #fff;
+    padding: 3px 5px;
+    font-weight: 600;
+    font-size: 14px;
+    @include borderRadius(10px);
+  }
+  .coming-soon-img{
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
