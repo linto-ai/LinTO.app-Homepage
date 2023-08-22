@@ -16,7 +16,7 @@ title: LinTO.app
   </div>
   <div class="flex1 flex col align-center" id="linto-studio-wrapper">
     <h2 class="green">Accédez à vos enregistrements et à vos transcriptions sur <strong>LinTO STUDIO</strong></h2>
-    <a href="https://alpha.linto.ai" target="_blank" class="call-to-action studio">
+    <a href="https://studio.linto.app" target="_blank" class="call-to-action studio">
       <img src="/assets/img/linto-studio-logo-txt.svg" class="cta-img">
     </a>
   </div>
